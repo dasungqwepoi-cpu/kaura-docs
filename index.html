@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>K-AURA — Korean Birth Chart (Saju) & On-Device Face Aura</title>
+  <meta name="description" content="Decode your Korean Four Pillars (Saju) birth chart and 100% on-device facial geometry aura on iOS. Zero accounts. Zero photos uploaded." />
+  <link rel="icon" type="image/png" href="./icon.png" />
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #09090b;
+      --card: #121216;
+      --border: #27272a;
+      --text: #f4f4f5;
+      --muted: #a1a1aa;
+      --jade: #10b981;
+      --vermilion: #ef4444;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+    .brand img {
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+    }
+    .eyebrow {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--jade);
+      margin: 0 0 4px;
+    }
+    h1 {
+      font-family: Georgia, "New York", serif;
+      font-size: clamp(32px, 6vw, 44px);
+      line-height: 1.15;
+      margin: 0 0 14px;
+      font-weight: 600;
+    }
+    .lead {
+      color: var(--muted);
+      font-size: 16px;
+      margin: 0 0 32px;
+      max-width: 580px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+      margin: 28px 0 40px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+    a.card:hover {
+      border-color: #52525b;
+      transform: translateY(-2px);
+    }
+    .card h2 {
+      font-size: 16px;
+      margin: 0 0 6px;
+      font-weight: 600;
+    }
+    .card p {
+      margin: 0;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .pillars {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px;
+      margin-bottom: 32px;
+    }
+    .pillars h2 {
+      font-size: 15px;
+      margin: 0 0 10px;
+    }
+    .pillars ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .pillars li + li { margin-top: 6px; }
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 22px;
+      color: var(--muted);
+      font-size: 13px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    footer a { color: var(--text); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="brand">
+      <img src="./icon.png" alt="K-AURA App Icon" />
+      <div>
+        <p class="eyebrow">iOS App · K-AURA Studio</p>
+        <div style="font-family: Georgia, serif; font-size: 20px; font-weight: 600;">K-AURA</div>
+      </div>
+    </div>
+
+    <h1>Decode Your Korean Birth Chart &amp; Face Aura</h1>
+    <p class="lead">
+      K-AURA fuses deterministic Korean Four Pillars (Saju) astronomy with 100% on-device Apple Vision facial geometry — no account required, and zero photos ever leave your iPhone.
+    </p>
+
+    <section class="pillars">
+      <h2>Privacy-First Architecture</h2>
+      <ul>
+        <li><strong>Zero Photos Uploaded:</strong> All facial landmark geometry runs exclusively inside Apple Vision on your device and is discarded in memory after capture.</li>
+        <li><strong>True Solar Time Saju Engine:</strong> Computes exact Year, Month, Day, and Hour pillars locally using your birth city's longitude and historical DST.</li>
+        <li><strong>Zero Account Needed:</strong> Your saved profile and K-Chemistry matches live only on your iPhone and can be wiped anytime in one tap.</li>
+      </ul>
+    </section>
+
+    <div class="grid">
+      <a class="card" href="./privacy.html">
+        <h2>Privacy Policy</h2>
+        <p>How K-AURA processes facial geometry strictly on-device with zero photo uploads.</p>
+      </a>
+      <a class="card" href="./terms.html">
+        <h2>Terms of Use</h2>
+        <p>Entertainment-only notice, usage terms, and intellectual property.</p>
+      </a>
+      <a class="card" href="./support.html">
+        <h2>App Support</h2>
+        <p>FAQs, troubleshooting, and direct contact with K-AURA Studio.</p>
+      </a>
+    </div>
+
+    <footer>
+      <span>For entertainment and self-reflection purposes only.</span>
+      <span>Contact: <a href="mailto:dasungqwepoi@gmail.com">dasungqwepoi@gmail.com</a></span>
+    </footer>
+  </main>
+</body>
+</html>
